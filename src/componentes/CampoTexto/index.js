@@ -1,6 +1,9 @@
 
 import './CampoTexto.css'
 
+function aoDigitado(evento){
+    console.log(evento.target.value);
+}
 
 function CampoTexto(props){
     return(
@@ -8,7 +11,7 @@ function CampoTexto(props){
             <label>
                 {props.label}
             </label>
-            <input placeholder={props.placeholder} />
+            <input onChange={aoDigitado} required={props.obrigatorio} placeholder={props.placeholder} />
         </div>
     )
 }
