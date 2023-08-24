@@ -54,8 +54,9 @@ function Formulario(props) {
           obrigatorio={true} 
           label="Time" 
           itens={props.times}
+          valor={time}
           aoAlterado={valor=> setTime(valor)}
-          />
+          /> 
         <Botao texto="Criar Card" />
       </form>
     </section>
